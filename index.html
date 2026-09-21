@@ -157,6 +157,7 @@
       
         <div class="section local_area">
             <h3>📦 강서구 퀵서비스 전차종 신속 배차 가이드</h3>
+          <p>염창동 등촌동 화곡동 가양동 마곡동 내발산동 외발산동 공항동 방화동 개화동 과해동 오곡동 오쇠동 우장산동 강서 김포공항 발산동 공항 전지역</p>
             <ul>
                 <li>🏍️ 강서구오토바이퀵 : 소형 긴급 화물 및 중요 서류 신속한 배송 지원</li>
                 <li>🚙 강서구다마스퀵 : 중소형 가전, 소형이사 안전한 안심 배송</li>
@@ -254,5 +255,28 @@
       </footer>
    </div>
 </div>
+ <script>
+  // 마우스 우클릭 차단
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+
+  // 드래그 차단
+  document.addEventListener('dragstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 텍스트 선택(블록 지정) 차단
+  document.addEventListener('selectstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 복사 키(Ctrl+C / Cmd+C) 차단
+  document.addEventListener('keydown', function (e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'c') {
+      e.preventDefault();
+    }
+  });
+</script> 
 </body>
 </html>
